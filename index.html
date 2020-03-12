@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html>
 
-<body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+<head>
+    <title>
+        Index
+    </title>
+</head>
+<script src="index.js"></script>
+
+<body style="background-color: crimson; text-align: center;color: greenyellow;">
+    <header style="background-color: rgb(70, 70, 70);">
+        <h1 style>Pomogite</h1>
+    </header>
+    <h1>Inputbox?</h1>
+    2<input name="CrcCount" type="radio" id="Form" value="2" onclick="DrawCircles(2)"/>
+    3<input name="CrcCount" type="radio" id="Form" value="3" onclick="DrawCircles(3)"/>
+    4<input name="CrcCount" type="radio" id="Form" value="4" onclick="DrawCircles(4)"/>
+    <br><br>
+    
+    <input type="text" id="Form" />
+    <button onclick="okPressed()">Ok
+    </button>
+    <br><br>
+    <canvas id="mainCanvas"style="background-color: white;" height="600" width="600"></canvas>
 </body>
 
 </html>
