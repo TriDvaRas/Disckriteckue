@@ -1,0 +1,124 @@
+[
+    {
+        "name": "U",
+        "strokeWidth": 3,
+        "fill": false,
+        "path": [
+            {
+                "type": "point",
+                "params": [
+                    5,
+                    5
+                ]
+            },
+            {
+                "type": "point",
+                "params": [
+                    5,
+                    595
+                ]
+            },
+            {
+                "type": "point",
+                "params": [
+                    595,
+                    595
+                ]
+            },
+            {
+                "type": "point",
+                "params": [
+                    595,
+                    5
+                ]
+            }
+        ]
+    },
+    {
+        "name": "AB",
+        "strokeWidth": 1,
+        "fill": false,
+        "path": [
+            {
+                "type": "arc",
+                "params": [
+                    375,
+                    300,
+                    200,
+                    1.95,
+                    -1.95,
+                    false
+                ]
+            },
+            {
+                "type": "arc",
+                "params": [
+                    375,
+                    300,
+                    200,
+                    -1.18,
+                    1.18,
+                    false
+                ]
+            }
+        ]
+    },
+    {
+        "name": "A",
+        "strokeWidth": 2,
+        "fill": false,
+        "path": [
+            {
+                "type": "arc",
+                "params": [
+                    225,
+                    300,
+                    200,
+                    -1.18,
+                    1.18,
+                    true
+                ]
+            },
+            {
+                "type": "arc",
+                "params": [
+                    375,
+                    300,
+                    200,
+                    1.95,
+                    -1.95,
+                    false
+                ]
+            }
+        ]
+    },
+    {
+        "name": "B",
+        "strokeWidth": 2,
+        "fill": false,
+        "path": [
+            {
+                "type": "arc",
+                "params": [
+                    225,
+                    300,
+                    200,
+                    1.95,
+                    -1.95,
+                    true
+                ]
+            },
+            {
+                "type": "arc",
+                "params": [
+                    375,
+                    300,
+                    200,
+                    -1.18,
+                    1.18,
+                    false
+                ]
+            }
+        ]
+    }
+]
