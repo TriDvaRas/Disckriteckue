@@ -9,12 +9,7 @@
                 "type": "point",
                 "params": [
                     5,
-                    5
-                ]
-            },
-            {
-                "type": "point",
-                "params": [
+                    5,
                     5,
                     595
                 ]
@@ -22,6 +17,8 @@
             {
                 "type": "point",
                 "params": [
+                    5,
+                    595,
                     595,
                     595
                 ]
@@ -30,6 +27,17 @@
                 "type": "point",
                 "params": [
                     595,
+                    595,
+                    595,
+                    5
+                ]
+            },
+            {
+                "type": "point",
+                "params": [
+                    595,
+                    5,
+                    5,
                     5
                 ]
             }
