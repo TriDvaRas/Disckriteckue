@@ -4,6 +4,10 @@
             "name": "U",
             "strokeWidth": 3,
             "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
             "path": [
                 {
                     "type": "rect",
@@ -20,6 +24,10 @@
             "name": "AB",
             "strokeWidth": 1,
             "fill": false,
+            "labelPos": [
+                272,
+                312
+            ],
             "path": [
                 {
                     "type": "arc",
@@ -49,6 +57,10 @@
             "name": "A",
             "strokeWidth": 2,
             "fill": false,
+            "labelPos": [
+                84,
+                312
+            ],
             "path": [
                 {
                     "type": "arc",
@@ -78,6 +90,10 @@
             "name": "B",
             "strokeWidth": 2,
             "fill": false,
+            "labelPos": [
+                490,
+                312
+            ],
             "path": [
                 {
                     "type": "arc",
