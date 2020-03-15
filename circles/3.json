@@ -1,0 +1,332 @@
+{
+    "Objects": [
+        {
+            "name": "U",
+            "strokeWidth": 3,
+            "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
+            "path": [
+                {
+                    "type": "rect",
+                    "params": [
+                        5,
+                        5,
+                        590,
+                        590
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ABC",
+            "strokeWidth": 1,
+            "fill": false,
+            "labelPos": [
+                272,
+                312
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        300,
+                        375,
+                        200,
+                        -0.896,
+                        -2.245,
+                        true
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        375,
+                        225,
+                        200,
+                        -3.104,
+                        1.955,
+                        true
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        225,
+                        225,
+                        200,
+                        1.186,
+                        -0.037,
+                        true
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "AB",
+            "strokeWidth": 1,
+            "fill": false,
+            "labelPos": [
+                84,
+                312
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        300,
+                        375,
+                        200,
+                        -0.896,
+                        -2.245,
+                        true
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        375,
+                        225,
+                        200,
+                        -3.104,
+                        -1.955,
+                        false
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        225,
+                        225,
+                        200,
+                        -1.186,
+                        -0.037,
+                        false
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "AC",
+            "strokeWidth": 1,
+            "fill": false,
+            "labelPos": [
+                490,
+                312
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        375,
+                        225,
+                        200,
+                        1.955,
+                        -3.104,
+                        false
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        300,
+                        375,
+                        200,
+                        -2.245,
+                        3.104,
+                        true
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        225,
+                        225,
+                        200,
+                        2.245,
+                        1.186,
+                        true
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BC",
+            "strokeWidth": 1,
+            "fill": false,
+            "labelPos": [
+                490,
+                312
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        225,
+                        225,
+                        200,
+                        -0.037,
+                        1.186,
+                        false
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        375,
+                        225,
+                        200,
+                        1.955,
+                        0.896,
+                        true
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        300,
+                        375,
+                        200,
+                        0.037,
+                        -0.896,
+                        true
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "A",
+            "strokeWidth": 2,
+            "fill": false,
+            "labelPos": [
+                490,
+                312
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        225,
+                        225,
+                        200,
+                        -1.186,
+                        2.245,
+                        true
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        300,
+                        375,
+                        200,
+                        3.104,
+                        -2.245,
+                        false
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        375,
+                        225,
+                        200,
+                        -3.104,
+                        -1.955,
+                        false
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B",
+            "strokeWidth": 2,
+            "fill": false,
+            "labelPos": [
+                490,
+                312
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        375,
+                        225,
+                        200,
+                        0.896,
+                        -1.955,
+                        true
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        225,
+                        225,
+                        200,
+                        -1.186,
+                        -0.037,
+                        false
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        300,
+                        375,
+                        200,
+                        -0.896,
+                        0.037,
+                        false
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "C",
+            "strokeWidth": 2,
+            "fill": false,
+            "labelPos": [
+                490,
+                312
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        300,
+                        375,
+                        200,
+                        3.104,
+                        0.037,
+                        true
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        375,
+                        225,
+                        200,
+                        0.896,
+                        1.955,
+                        false
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        225,
+                        225,
+                        200,
+                        1.186,
+                        2.245,
+                        false
+                    ]
+                }
+            ]
+        }
+    ]
+}
