@@ -10,6 +10,10 @@ function LoadFigures() {
     GetShapes(3).then((data) => {
         ShapeList3 = data;
     });
+    
+    GetShapes(4).then((data) => {
+        ShapeList4 = data;
+    });
 }
 
 //
