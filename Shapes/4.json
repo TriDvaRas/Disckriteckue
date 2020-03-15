@@ -1,0 +1,24 @@
+{
+    "Objects": [
+        {
+            "name": "U",
+            "strokeWidth": 3,
+            "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
+            "path": [
+                {
+                    "type": "rect",
+                    "params": [
+                        5,
+                        5,
+                        590,
+                        590
+                    ]
+                }
+            ]
+        }
+    ]
+}
