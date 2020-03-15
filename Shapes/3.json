@@ -21,52 +21,8 @@
             ]
         },
         {
-            "name": "ABC",
-            "strokeWidth": 2,
-            "fill": false,
-            "labelPos": [
-                272,
-                312
-            ],
-            "path": [
-                {
-                    "type": "arc",
-                    "params": [
-                        300,
-                        375,
-                        200,
-                        -0.896,
-                        -2.245,
-                        true
-                    ]
-                },
-                {
-                    "type": "arc",
-                    "params": [
-                        375,
-                        225,
-                        200,
-                        -3.104,
-                        1.955,
-                        true
-                    ]
-                },
-                {
-                    "type": "arc",
-                    "params": [
-                        225,
-                        225,
-                        200,
-                        1.186,
-                        -0.037,
-                        true
-                    ]
-                }
-            ]
-        },
-        {
             "name": "AB",
-            "strokeWidth": 1,
+            "strokeWidth": 0,
             "fill": false,
             "labelPos": [
                 84,
@@ -110,7 +66,7 @@
         },
         {
             "name": "AC",
-            "strokeWidth": 1,
+            "strokeWidth": 0,
             "fill": false,
             "labelPos": [
                 490,
@@ -154,7 +110,7 @@
         },
         {
             "name": "BC",
-            "strokeWidth": 1,
+            "strokeWidth": 0,
             "fill": false,
             "labelPos": [
                 490,
@@ -191,6 +147,50 @@
                         200,
                         0.037,
                         -0.896,
+                        true
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ABC",
+            "strokeWidth": 2,
+            "fill": false,
+            "labelPos": [
+                272,
+                312
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        300,
+                        375,
+                        200,
+                        -0.896,
+                        -2.245,
+                        true
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        375,
+                        225,
+                        200,
+                        -3.104,
+                        1.955,
+                        true
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        225,
+                        225,
+                        200,
+                        1.186,
+                        -0.037,
                         true
                     ]
                 }
