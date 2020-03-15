@@ -8,14 +8,14 @@
 </head>
 <script src="index.js"></script>
 
-<body style="background-color: crimson; text-align: center;color: greenyellow;">
+<body style="background-color: crimson; text-align: center;color: greenyellow;" onload="LoadFigures()">
     <header style="background-color: rgb(70, 70, 70);">
         <h1 style>Pomogite</h1>
     </header>
     <h1>Inputbox?</h1>
-    2<input name="CrcCount" type="radio" id="Form" value="2" onclick="DrawCircles(2)"/>
-    3<input name="CrcCount" type="radio" id="Form" value="3" onclick="DrawCircles(3)"/>
-    4<input name="CrcCount" type="radio" id="Form" value="4" onclick="DrawCircles(4)"/>
+    2<input name="CrcCount" type="radio" id="Form" value="2" onclick="ChangeCrcNum(2)" checked/>
+    3<input name="CrcCount" type="radio" id="Form" value="3" onclick="ChangeCrcNum(3)"/>
+    4<input name="CrcCount" type="radio" id="Form" value="4" onclick="ChangeCrcNum(4)"/>
     <br><br>
     
     <input type="text" id="Form" />
