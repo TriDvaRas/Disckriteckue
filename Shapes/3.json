@@ -24,10 +24,6 @@
             "name": "AB",
             "strokeWidth": 0,
             "fill": false,
-            "labelPos": [
-                84,
-                312
-            ],
             "path": [
                 {
                     "type": "arc",
@@ -68,10 +64,6 @@
             "name": "AC",
             "strokeWidth": 0,
             "fill": false,
-            "labelPos": [
-                490,
-                312
-            ],
             "path": [
                 {
                     "type": "arc",
@@ -112,10 +104,6 @@
             "name": "BC",
             "strokeWidth": 0,
             "fill": false,
-            "labelPos": [
-                490,
-                312
-            ],
             "path": [
                 {
                     "type": "arc",
@@ -156,10 +144,6 @@
             "name": "ABC",
             "strokeWidth": 2,
             "fill": false,
-            "labelPos": [
-                272,
-                312
-            ],
             "path": [
                 {
                     "type": "arc",
@@ -201,8 +185,8 @@
             "strokeWidth": 2,
             "fill": false,
             "labelPos": [
-                490,
-                312
+                94,
+                192
             ],
             "path": [
                 {
@@ -245,8 +229,8 @@
             "strokeWidth": 2,
             "fill": false,
             "labelPos": [
-                490,
-                312
+                480,
+                192
             ],
             "path": [
                 {
@@ -289,8 +273,8 @@
             "strokeWidth": 2,
             "fill": false,
             "labelPos": [
-                490,
-                312
+                288,
+                510
             ],
             "path": [
                 {
