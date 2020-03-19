@@ -1,6 +1,10 @@
 //globals
-CrcNum = 2;
-
+SetNum = 2;
+function PageLoaded(params) {
+    ChangeSetNum(2);
+    LoadFigures();
+    DrawTruthTable();
+}
 //preload figures data into globals
 function LoadFigures() {
     GetShapes(2).then((data) => {
@@ -10,38 +14,54 @@ function LoadFigures() {
     GetShapes(3).then((data) => {
         ShapeList3 = data;
     });
-    
+
     GetShapes(4).then((data) => {
         ShapeList4 = data;
     });
 }
-
 //
+function DrawTruthTable(params) {
+    var table = document.getElementById('truthTable');
+    //head
+    var code = "<tr>";
+    var SetNames = ["A", "B", "C", "D"];
+    for (let i = 0; i < window.SetNum; i++) {
+        code += `<th>${SetNames[i]}</th>`;
+    }
+    code += "<th>ans</th></tr>";
+    //body
+    
+    //add code to the table
+    table.innerHTML = code;
+}
+//write input into global
 function okPressed() {
     text = document.getElementById("Form").value;
     console.log(text);
 }
 
 //radio button change
-function ChangeCrcNum(num) {
-    if (CrcNum != num) {
-        CrcNum = num;
+function ChangeSetNum(num) {
+    if (SetNum != num) {
+        SetNum = num;
         DrawCanvas();
     }
 }
 
 //redraw canvas
 function DrawCanvas() {
+    //get canvas context
     var drawingCanvas = document.getElementById('mainCanvas');
     var context = drawingCanvas.getContext('2d');
+    //draw sets into context
     if (drawingCanvas && drawingCanvas.getContext) {
         context.clear();
-        if (window.CrcNum == 2) {
+        if (window.SetNum == 2) {
             DrawShapeList(context, window.ShapeList2);
-        } else if (window.CrcNum == 3) {
+        } else if (window.SetNum == 3) {
             DrawShapeList(context, window.ShapeList3);
-        } else if (window.CrcNum == 4) {
-
+        } else if (window.SetNum == 4) {
+            DrawShapeList(context, window.ShapeList4);
         }
 
 

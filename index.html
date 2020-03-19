@@ -8,21 +8,22 @@
 </head>
 <script src="index.js"></script>
 
-<body style="background-color: crimson; text-align: center;color: greenyellow;" onload="LoadFigures()">
+<body style="background-color: crimson; text-align: center;color: greenyellow;" onload="PageLoaded()">
     <header style="background-color: rgb(70, 70, 70);">
         <h1 style>Pomogite</h1>
     </header>
     <h1>Inputbox?</h1>
-    2<input name="CrcCount" type="radio" id="Form" value="2" onclick="ChangeCrcNum(2)" checked/>
-    3<input name="CrcCount" type="radio" id="Form" value="3" onclick="ChangeCrcNum(3)"/>
-    4<input name="CrcCount" type="radio" id="Form" value="4" onclick="ChangeCrcNum(4)"/>
+    2<input name="setCount" type="radio" id="Form" value="2" onclick="ChangeSetNum(2)" checked />
+    3<input name="setCount" type="radio" id="Form" value="3" onclick="ChangeSetNum(3)" />
+    4<input name="setCount" type="radio" id="Form" value="4" onclick="ChangeSetNum(4)" />
     <br><br>
-    
+
     <input type="text" id="Form" />
     <button onclick="okPressed()">Ok
     </button>
     <br><br>
-    <canvas id="mainCanvas"style="background-color: white;" height="600" width="600"></canvas>
+    <canvas id="mainCanvas" style="background-color: white;" height="600" width="600"></canvas>
+    <table id="truthTable" style="margin: auto;background-color: cyan;color:darkblue;border: 1px solid black"></table>
 </body>
 
 </html>
