@@ -25,13 +25,11 @@ function DrawShapes(canvas, ShapeList) {
         canvas.lineWidth = A.strokeWidth;
         canvas.beginPath();
         canvas.lineCap = "round";
-        console.log(A);
         //if (A.name != "B") continue;
 
 
         for (let index = 0; index < A.path.length; index++) {
             const P = A.path[index];
-            console.log(P.params);
 
             if (P.type == "arc") {
                 canvas.arc(P.params[0], P.params[1], P.params[2], P.params[3], P.params[4], P.params[5]);
@@ -80,3 +78,25 @@ CanvasRenderingContext2D.prototype.clear =
             this.restore();
         }
     };
+//change fill value of set
+function fillSet(set, state) {
+    let arr;
+    switch (SetNum) {
+        case 2:
+            arr = window.ShapeList2;
+            break;
+        case 3:
+            arr = window.ShapeList3;
+            break;
+        case 4:
+            arr = window.ShapeList4;
+            break;
+        default:
+            break;
+    }
+    for (let i = 0; i < arr.Objects.length; i++) {
+        const A = arr.Objects[i];
+        if (A.name == set)
+            A.fill = state;
+    }
+}

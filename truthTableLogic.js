@@ -7,8 +7,6 @@ function DrawTruthTable(params) {
     //body
     code += getBody();
     //add code to the table
-    console.log(code);
-    
     table.innerHTML = code;
 }
 
@@ -24,11 +22,11 @@ function getHead() {
 function getBody() {
     var rows = [];
     for (let i = 0; i < Math.pow(2, window.SetNum); i++) {
-        rows.push("<td contenteditable>0</td>");
+        rows.push(`<td id="tt${i}" contenteditable maxlength="1">0</td>`);
     }
     for (let i = 0; i < window.SetNum; i++) {
         for (let j = 0; j < Math.pow(2, window.SetNum); j++) {
-            rows[j] = `<td>${getNum(i, j)}</td>` + rows[j];
+            rows[j] = `<td>${getTTNum(i, j)}</td>` + rows[j];
         }
     }
     var c = "";
@@ -37,8 +35,85 @@ function getBody() {
     }
     return c;
 }
+//get nember for tt filling
+function getTTNum(i, j) {
 
-function getNum(i, j) {
-    
     return Math.floor(j / Math.pow(2, i)) % 2;
+}
+//get set name by tt id
+function ttIdToSetName(j) {
+    s = "";
+    setNames = ["A", "B", "C", "D"];
+    b2 = Base10ToRBase2(j).split('');
+    for (let i = 0; i < b2.length; i++) {
+        if (b2[i] == 1) {
+            s += setNames[i];
+        }
+    }
+    if (s == "")
+        s = "U";
+    return s;
+}
+
+function Base10ToRBase2(j) {
+    str = "";
+    for (let i = 0; i < window.SetNum; i++) {
+
+        str = j % 2 + str;
+        j = Math.floor(j / 2);
+    }
+    console.log(str);
+
+    return str;
+}
+//keyDownHandler
+function keyHandle(e) {
+    let eId = document.activeElement.id;
+    if (eId.startsWith("tt")) {
+        e.preventDefault();
+        let oldValue = document.activeElement.innerHTML.charAt(0);
+        eId = eId.charAt(2);
+        if (e.code == "Digit0" || e.code == "Numpad0") {
+
+            fillSet(ttIdToSetName(eId), false);
+            DrawCanvas();
+            document.activeElement.innerHTML = "0";
+            moveToNext(eId);
+        }
+        else if (e.code == "Digit1" || e.code == "Numpad1") {
+            fillSet(ttIdToSetName(eId), true);
+            DrawCanvas();
+            document.activeElement.innerHTML = "1";
+            moveToNext(eId);
+        }
+        else {
+            document.activeElement.innerHTML = oldValue;
+        }
+    }
+}
+function dblClHandle(e) {
+    let eId = document.activeElement.id.charAt(2);
+    let oldValue = document.activeElement.innerHTML.charAt(0);
+    e.preventDefault();
+    if (oldValue == "1") {
+        fillSet(ttIdToSetName(eId), false);
+        DrawCanvas();
+        document.activeElement.innerHTML = "0";
+    }
+    else if (oldValue == "0") {
+        fillSet(ttIdToSetName(eId), true);
+        DrawCanvas();
+        document.activeElement.innerHTML = "1";
+    }
+}
+function moveToNext(id) {
+    id++;
+    var el = document.getElementById(`tt${id}`)
+
+    if (el)
+        el.focus();
+    else {
+        el = document.getElementById(`tt0`);
+        el.focus();
+    }
 }

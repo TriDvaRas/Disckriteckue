@@ -4,6 +4,8 @@ function PageLoaded(params) {
     ChangeSetNum(2);
     LoadFigures();
     DrawTruthTable();
+    truthTable.onkeypress = keyHandle;
+    truthTable.ondblclick = dblClHandle;
 }
 
 
@@ -21,6 +23,7 @@ function ChangeSetNum(num) {
         DrawTruthTable();
     }
 }
+
 
 
 
