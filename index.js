@@ -18,6 +18,7 @@ function ChangeSetNum(num) {
     if (SetNum != num) {
         SetNum = num;
         DrawCanvas();
+        DrawTruthTable();
     }
 }
 
