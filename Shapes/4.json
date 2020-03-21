@@ -22,7 +22,7 @@
         },
         {
             "name": "AC",
-            "strokeWidth": 1,
+            "strokeWidth": 0,
             "fill": false,
             "labelPos": [
                 556,
@@ -42,7 +42,7 @@
         },
         {
             "name": "AD",
-            "strokeWidth": 1,
+            "strokeWidth": 0,
             "fill": false,
             "labelPos": [
                 556,
@@ -62,7 +62,7 @@
         },
         {
             "name": "BC",
-            "strokeWidth": 1,
+            "strokeWidth": 0,
             "fill": false,
             "labelPos": [
                 556,
@@ -82,7 +82,7 @@
         },
         {
             "name": "BD",
-            "strokeWidth": 1,
+            "strokeWidth": 0,
             "fill": false,
             "labelPos": [
                 556,
@@ -93,6 +93,645 @@
                     "type": "rect",
                     "params": [
                         350,
+                        350,
+                        100,
+                        100
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ABCD",
+            "strokeWidth": 0,
+            "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
+            "path": [
+                {
+                    "type": "rect",
+                    "params": [
+                        250,
+                        250,
+                        100,
+                        100
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "AB",
+            "strokeWidth": 0,
+            "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        475,
+                        350,
+                        100,
+                        -1.57,
+                        -0.522,
+                        false
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        475,
+                        250,
+                        100,
+                        0.525,
+                        1.57,
+                        false
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        475,
+                        350,
+                        450,
+                        350
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        450,
+                        350,
+                        450,
+                        250
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        450,
+                        250,
+                        475,
+                        250
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "AB",
+            "strokeWidth": 0,
+            "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        125, 350, 100, -1.57, -2.62, true
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        125, 250, 100, 2.62, 1.57, true
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        125, 350,150, 350
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        150, 350,150, 250
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        150, 250,125, 250
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "CD",
+            "strokeWidth": 0,
+            "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        350, 125, 100, 3.142, -2.092, false
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        250, 125, 100, -1.05, 0, false
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        250, 125,250, 150
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        250, 150,350, 150
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        350, 150,350, 125
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "CD",
+            "strokeWidth": 0,
+            "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        350, 475, 100, 3.142, 2.092, true
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        250, 475, 100, 1.05, 0, true
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        250, 475,250, 450
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        250, 450,350, 450
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        350, 450,350, 475
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "A",
+            "strokeWidth": 2,
+            "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        125,
+                        350,
+                        100,
+                        -1.57,
+                        -2.62,
+                        true
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        125,
+                        250,
+                        100,
+                        2.62,
+                        -1.57,
+                        false
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        125,
+                        250,
+                        150,
+                        250
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        150,
+                        250,
+                        150,
+                        150
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        150,
+                        150,
+                        125,
+                        150
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "A",
+            "strokeWidth": 2,
+            "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        475,
+                        350,
+                        100,
+                        -1.57,
+                        -0.522,
+                        false
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        475,
+                        250,
+                        100,
+                        0.525,
+                        -1.57,
+                        true
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        475,
+                        250,
+                        450,
+                        250
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        450,
+                        250,
+                        450,
+                        150
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        450,
+                        150,
+                        475,
+                        150
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B",
+            "strokeWidth": 2,
+            "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        125, 250, 100, 1.57, 2.62, false
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        125, 350, 100, -2.62, 1.57, true
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        125, 350,
+                        150, 350
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        150, 350,
+                        150, 450
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        150, 450,
+                        125, 450
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B",
+            "strokeWidth": 2,
+            "fill": false,
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        475, 250, 100, 1.57, 0.522, true
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        475, 350, 100, -0.522, 1.57, false
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        475, 350,
+                        450, 350
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        450, 350,
+                        450, 450
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        450, 450,
+                        475, 450
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "C",
+            "strokeWidth": 2,
+            "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        250, 475, 100, 3.142, 1.05, true
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        350, 475, 100, 2.092, 3.142, false
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        150, 475,
+                        150, 450
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        150, 450,
+                        250, 450
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        250, 450,
+                        250, 475
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "C",
+            "strokeWidth": 2,
+            "fill": false,
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        250, 125, 100, 3.142, -1.05, false
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        350, 125, 100, -2.092, 3.142, true
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        150, 125,
+                        150, 150
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        150, 150,
+                        250, 150
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        250, 150,
+                        250, 125
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "D",
+            "strokeWidth": 2,
+            "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        350, 475, 100, 0, 2.092, false
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        250, 475, 100, 1.05, 0, true
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        350, 475,
+                        350, 450
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        350, 450,
+                        450, 450
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        450, 450,
+                        450, 475
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "D",
+            "strokeWidth": 2,
+            "fill": false,
+            "path": [
+                {
+                    "type": "arc",
+                    "params": [
+                        350, 125, 100, 0, -2.092, true
+                    ]
+                },
+                {
+                    "type": "arc",
+                    "params": [
+                        250, 125, 100, -1.05, 0, false
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        350, 125,
+                        350, 150
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        350, 150,
+                        450, 150
+                    ]
+                },
+                {
+                    "type": "line",
+                    "params": [
+                        450, 150,
+                        450, 125
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ABC",
+            "strokeWidth": 2,
+            "fill": false,
+            "path": [
+                {
+                    "type": "rect",
+                    "params": [
+                        150,
+                        250,
+                        100,
+                        100
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ACD",
+            "strokeWidth": 2,
+            "fill": false,
+            "path": [
+                {
+                    "type": "rect",
+                    "params": [
+                        250,
+                        150,
+                        100,
+                        100
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ABD",
+            "strokeWidth": 2,
+            "fill": false,
+            "path": [
+                {
+                    "type": "rect",
+                    "params": [
+                        350,
+                        250,
+                        100,
+                        100
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BCD",
+            "strokeWidth": 2,
+            "fill": false,
+            "path": [
+                {
+                    "type": "rect",
+                    "params": [
+                        250,
                         350,
                         100,
                         100
