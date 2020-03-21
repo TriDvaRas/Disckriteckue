@@ -19,14 +19,18 @@ function DrawCanvas() {
 }
 //DrawShapes
 function DrawShapes(canvas, ShapeList) {
-    canvas.strokeStyle = "#000";
     for (let i = 0; i < ShapeList.Objects.length; i++) {
         const A = ShapeList.Objects[i];
+        canvas.strokeStyle = "black";
         canvas.lineWidth = A.strokeWidth;
         canvas.beginPath();
         canvas.lineCap = "round";
-        //if (A.name != "B") continue;
-
+        // if (A.name == "U") continue;
+        if (A.fill) {
+            canvas.fillStyle = "rgb(220,220,220)";
+        } else {
+            canvas.fillStyle = "rgb(255,255,255)";
+        }
 
         for (let index = 0; index < A.path.length; index++) {
             const P = A.path[index];
@@ -35,26 +39,20 @@ function DrawShapes(canvas, ShapeList) {
                 canvas.arc(P.params[0], P.params[1], P.params[2], P.params[3], P.params[4], P.params[5]);
             }
             else if (P.type == "line") {
-                canvas.moveTo(P.params[0], P.params[1]);
-                canvas.lineTo(P.params[2], P.params[3]);
+                if (P.params[2]) {
+                    canvas.moveTo(P.params[0], P.params[1]);
+                    canvas.lineTo(P.params[2], P.params[3]);
+                }
+                else {
+                    canvas.lineTo(P.params[0], P.params[1]);
+                }
             }
             else if (P.type == "rect") {
-                if (A.fill) {
-                    canvas.fillStyle = "rgb(200,200,200)";
-                    canvas.fillRect(P.params[0], P.params[1], P.params[2], P.params[3]);
-                }
+                canvas.fillRect(P.params[0], P.params[1], P.params[2], P.params[3]);
                 canvas.strokeRect(P.params[0], P.params[1], P.params[2], P.params[3]);
 
             }
         }
-
-        canvas.closePath();
-        if (A.fill) {
-            canvas.fillStyle = "rgb(220,220,220)";
-        } else {
-            canvas.fillStyle = "rgb(255,255,255)";
-        }
-
         canvas.fill();
         canvas.stroke();
         if (A.labelPos) {

@@ -22,7 +22,7 @@ function getHead() {
 function getBody() {
     var rows = [];
     for (let i = 0; i < Math.pow(2, window.SetNum); i++) {
-        rows.push(`<td id="tt${i}" contenteditable maxlength="1">0</td>`);
+        rows.push(`<td id="tt${i}" contenteditable maxlength="1">${getSetState(ttIdToSetName(i))}</td>`);
     }
     for (let i = 0; i < window.SetNum; i++) {
         for (let j = 0; j < Math.pow(2, window.SetNum); j++) {
@@ -52,6 +52,8 @@ function ttIdToSetName(j) {
     }
     if (s == "")
         s = "U";
+    console.log(s);
+
     return s;
 }
 
@@ -60,9 +62,9 @@ function Base10ToRBase2(j) {
     for (let i = 0; i < window.SetNum; i++) {
 
         str = j % 2 + str;
+        
         j = Math.floor(j / 2);
     }
-    console.log(str);
 
     return str;
 }
@@ -72,7 +74,7 @@ function keyHandle(e) {
     if (eId.startsWith("tt")) {
         e.preventDefault();
         let oldValue = document.activeElement.innerHTML.charAt(0);
-        eId = eId.charAt(2);
+        eId = eId.substring(2);
         if (e.code == "Digit0" || e.code == "Numpad0") {
 
             fillSet(ttIdToSetName(eId), false);
@@ -92,7 +94,7 @@ function keyHandle(e) {
     }
 }
 function dblClHandle(e) {
-    let eId = document.activeElement.id.charAt(2);
+    let eId = document.activeElement.id.substring(2);
     let oldValue = document.activeElement.innerHTML.charAt(0);
     e.preventDefault();
     if (oldValue == "1") {
@@ -116,4 +118,31 @@ function moveToNext(id) {
         el = document.getElementById(`tt0`);
         el.focus();
     }
+}
+function getSetState(setCode) {
+    let arr;
+    switch (SetNum) {
+        case 2:
+            arr = window.ShapeList2;
+            break;
+        case 3:
+            arr = window.ShapeList3;
+            break;
+        case 4:
+            arr = window.ShapeList4;
+            break;
+        default:
+            break;
+    }
+    if (!arr)
+        return 0;
+    for (let i = 0; i < arr.Objects.length; i++) {
+        const A = arr.Objects[i];
+        if (A.name == setCode)
+            if (A.fill)
+                return 1;
+            else
+                return 0;
+    }
+    return 0;
 }
