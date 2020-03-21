@@ -637,7 +637,7 @@
         },
         {
             "name": "ABC",
-            "strokeWidth": 1,
+            "strokeWidth": 2,
             "fill": false,
             "path": [
                 {
@@ -653,7 +653,7 @@
         },
         {
             "name": "ACD",
-            "strokeWidth": 1,
+            "strokeWidth": 2,
             "fill": false,
             "path": [
                 {
@@ -669,7 +669,7 @@
         },
         {
             "name": "ABD",
-            "strokeWidth": 1,
+            "strokeWidth": 2,
             "fill": false,
             "path": [
                 {
@@ -685,7 +685,7 @@
         },
         {
             "name": "BCD",
-            "strokeWidth": 1,
+            "strokeWidth": 2,
             "fill": false,
             "path": [
                 {
