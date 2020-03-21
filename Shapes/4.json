@@ -453,9 +453,6 @@
             "name": "C",
             "strokeWidth": 2,
             "fill": false,
-            "labelPos": [
-                200, 90
-            ],
             "path": [
                 {
                     "type": "arc",
@@ -494,6 +491,9 @@
             "name": "C",
             "strokeWidth": 2,
             "fill": false,
+            "labelPos": [
+                200, 90
+            ],
             "path": [
                 {
                     "type": "arc",
@@ -532,9 +532,6 @@
             "name": "D",
             "strokeWidth": 2,
             "fill": false,
-            "labelPos": [
-                370, 90
-            ],
             "path": [
                 {
                     "type": "arc",
@@ -573,6 +570,9 @@
             "name": "D",
             "strokeWidth": 2,
             "fill": false,
+            "labelPos": [
+                370, 90
+            ],
             "path": [
                 {
                     "type": "arc",
