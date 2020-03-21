@@ -19,6 +19,86 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "AC",
+            "strokeWidth": 1,
+            "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
+            "path": [
+                {
+                    "type": "rect",
+                    "params": [
+                        150,
+                        150,
+                        250,
+                        250
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "AD",
+            "strokeWidth": 1,
+            "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
+            "path": [
+                {
+                    "type": "rect",
+                    "params": [
+                        350,
+                        150,
+                        450,
+                        250
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BC",
+            "strokeWidth": 1,
+            "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
+            "path": [
+                {
+                    "type": "rect",
+                    "params": [
+                        150,
+                        350,
+                        250,
+                        450
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BD",
+            "strokeWidth": 1,
+            "fill": false,
+            "labelPos": [
+                556,
+                44
+            ],
+            "path": [
+                {
+                    "type": "rect",
+                    "params": [
+                        350,
+                        350,
+                        450,
+                        450
+                    ]
+                }
+            ]
         }
     ]
 }
